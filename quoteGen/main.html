@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e8f4f8;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #quote {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px;
+            font-size: 1.2rem;
+            color: #34495e;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #3498db;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <p id="quote"></p>
+    <button onclick="generate()">Generate Quote</button>
+    <script src="index.js"></script>
+</body>
+</html>

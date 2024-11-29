@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorFlipper</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        #green {
+            background-color: green;
+            color: white;
+        }
+        #red {
+            background-color: red;
+            color: white;
+        }
+        #blue {
+            background-color: blue;
+            color: white;
+        }
+        #random {
+            background-color: lawngreen;
+            color: white;
+        }
+        button {
+            border-radius: 5px;
+            width: 100px;
+            height: 35px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Flipper</h1>
+    <div class="button-container">
+        <button id="green" onclick="setColor('green')">GREEN</button>
+        <button id="red" onclick="setColor('red')">RED</button>
+        <button id="blue" onclick="setColor('blue')">BLUE</button>
+        <button id="random" onclick="randomGen()">RANDOM</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

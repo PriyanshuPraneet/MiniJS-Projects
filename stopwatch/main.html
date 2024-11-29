@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #time {
+            font-size: 4rem;
+            color: #34495e;
+            margin: 1rem 0 2rem 0;
+            font-weight: 500;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .button-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #3498db;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+
+        button:nth-child(2) {
+            background-color: #e74c3c;
+        }
+
+        button:nth-child(2):hover {
+            background-color: #c0392b;
+        }
+
+        button:nth-child(3) {
+            background-color: #2ecc71;
+        }
+
+        button:nth-child(3):hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h3>Stop Watch</h3>
+    <h1 id="time">00:00</h1>
+    <div class="button-container">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

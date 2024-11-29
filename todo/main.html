@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f7ff;
+            font-family: 'Poppins', sans-serif;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #34495e;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #items {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            min-height: 100px;
+        }
+
+        #itemInput {
+            width: 100%;
+            max-width: 480px;
+            padding: 12px 15px;
+            border: 2px solid #3498db;
+            border-radius: 25px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        #itemInput:focus {
+            border-color: #2980b9;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+        }
+
+        button {
+            background-color: #3498db;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <h2>Items</h2>
+    <div id="items"></div>
+    <input id="itemInput" type="text" placeholder="Add an Item"/>
+    <button onclick="addItem()">Add Item</button>
+    <script src="index.js"></script> 
+</body>
+</html>
